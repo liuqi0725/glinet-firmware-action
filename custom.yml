@@ -6,8 +6,31 @@ feeds:
     branch: master
 packages:
   - luci-app-mwan3
-
-
+  - luci-app-ssr-plus
+  - luci-i18n-ssr-plus-zh-cn
+  - luci-app-adbyby-plus
+  - luci-i18n-adbyby-plus-zh-cn
+  - luci-app-unblockmusic
+  - luci-i18n-unblockmusic-zh-cn
+  - ddns-scripts
+  - ddns-scripts_aliyun	
+  - ddns-scripts_dnspod	
+  - luci-app-ddns
+  - luci-i18n-ddns-zh-cn
+  - luci-app-frpc
+  - luci-app-qbittorrent
+  - luci-i18n-qbittorrent-zh-cn
+  - vsftpd-alt
+  - luci-app-vsftpd
+  - luci-i18n-vsftpd-zh-cn
+  - autosamba
+  - luci-app-samba
+  - luci-i18n-samba-zh-cn
+  - samba4-server
+  - openvpn-openssl	
+  - luci-app-openvpn-server	
+  - luci-i18n-openvpn-server-zh-cn
+  - Dropbear
 
 diffconfig: |
   CONFIG_PACKAGE_wpad-basic=n
