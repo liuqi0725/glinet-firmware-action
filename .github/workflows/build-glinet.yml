@@ -27,11 +27,13 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
     - uses: actions/checkout@v3
+    - name: cus
+      run: |
+        sudo apt-get remove --purge grub*
+        sudo apt-get install grub-efi
     - name: update
       run: |
         sudo apt update
-        sudo apt-get remove --purge grub*
-        sudo apt-get install grub-efi
         sudo apt upgrade -y
         sudo apt install build-essential libncurses5-dev gawk git libssl-dev gettext zlib1g-dev swig unzip time rsync python3 python3-setuptools python3-yaml subversion -y
         git config --global user.email "aa@163.com"
